@@ -1,0 +1,7 @@
+.site-title {
+  font-size: 2rem;
+  font-family: var(--font-site-title);
+  background: linear-gradient(to top right, red, blue);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

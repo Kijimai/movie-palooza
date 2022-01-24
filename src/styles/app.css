@@ -3,14 +3,12 @@
   --font-headers: "Roboto";
   --font-sub: "Open Sans";
   --font-site-title: "Lobster";
-
   --color-white: 0 0% 100%;
   --color-black: 0 0% 0%;
-
-  /* Movie DB colors */
-  --mdb-primary-dark-blue: 211 66% 15%;
-  --mdb-secondary-light-blue: 193 99% 45%;
-  --mdb-tertiary-light-green: 136 39% 69%;
+  --color-dark-blue: 240 42% 18%;
+  --color-dark-purple: 258 100% 25%;
+  --color-purple: 277 89% 40%;
+  --color-pink: 325 94% 66%;
 }
 
 html {
@@ -26,8 +24,31 @@ html {
 }
 
 body {
+  background: linear-gradient(to bottom, hsl(var(--color-dark-blue)) 5%, hsl(var(--color-dark-purple)) 15%, hsl(var(--color-purple)) 45%, hsl(var(--color-pink)));
   font-size: var(--default-font-size);
   min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-headers);
+}
+
+.site-title {
+  font-size: 2rem;
+  font-family: var(--font-site-title);
+  background: linear-gradient(to top right, red, blue);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer__logo {
+  height: 4rem;
+  width: 4rem;
 }
 
 /*# sourceMappingURL=app.css.map */

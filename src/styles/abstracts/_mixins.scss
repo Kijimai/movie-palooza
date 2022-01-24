@@ -1,0 +1,9 @@
+@mixin bodyGradient {
+  background: linear-gradient(
+    to bottom,
+    hsl(var(--color-dark-blue)) 5%,
+    hsl(var(--color-dark-purple)) 15%,
+    hsl(var(--color-purple)) 45%,
+    hsl(var(--color-pink))
+  );
+}
