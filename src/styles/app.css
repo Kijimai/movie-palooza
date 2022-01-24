@@ -1,0 +1,33 @@
+:root {
+  --default-font-size: 62.5%;
+  --font-headers: "Roboto";
+  --font-sub: "Open Sans";
+  --font-site-title: "Lobster";
+
+  --color-white: 0 0% 100%;
+  --color-black: 0 0% 0%;
+
+  /* Movie DB colors */
+  --mdb-primary-dark-blue: 211 66% 15%;
+  --mdb-secondary-light-blue: 193 99% 45%;
+  --mdb-tertiary-light-green: 136 39% 69%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: var(--default-font-size);
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=app.css.map */
