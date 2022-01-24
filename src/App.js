@@ -1,13 +1,15 @@
-import { BrowserRouter, Routes, Route} from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import "./styles/app.css"
 import Navigator from "./components/navigator/Navigator"
 import Footer from "./components/footer/Footer"
+import { AppProvider } from "./context/context"
+
 function App() {
   return (
-    <div className="App">
+    <AppProvider>
       <Navigator />
       <Footer />
-    </div>
+    </AppProvider>
   )
 }
 
