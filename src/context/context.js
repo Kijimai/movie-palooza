@@ -5,6 +5,7 @@ const authAxios = axios.create({
   baseURL: "https://api.themoviedb.org/3/movie",
   headers: {
     Authorization: `Bearer ${process.env.REACT_APP_TOKEN}`,
+    // "Content-Type": "application/JSON;charset=utf-8",
   },
 })
 
