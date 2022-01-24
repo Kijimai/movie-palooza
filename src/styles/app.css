@@ -38,12 +38,29 @@ h6 {
   font-family: var(--font-headers);
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 .site-title {
   font-size: 2rem;
   font-family: var(--font-site-title);
   background: linear-gradient(to top right, red, blue);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.navigator__link {
+  color: hsl(var(--color-white));
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: var(--font-sub);
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+}
+.navigator__link:hover {
+  color: yellow;
 }
 
 .footer__logo {

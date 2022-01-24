@@ -5,3 +5,18 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.navigator {
+  &__link {
+    color: hsl(var(--color-white));
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: var(--font-sub);
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: yellow;
+    }
+  }
+}

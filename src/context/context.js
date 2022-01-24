@@ -20,11 +20,11 @@ const AppProvider = ({ children }) => {
 
   const handleChange = () => {}
 
-  useEffect(() => {
-    authAxios.get("/76341").then(({ data }) => {
-      console.log(data)
-    })
-  })
+  // useEffect(() => {
+  //   authAxios.get("/76341").then(({ data }) => {
+  //     console.log(data)
+  //   })
+  // })
 
   return (
     <AppContext.Provider value={{ handleSubmit, handleChange }}>
