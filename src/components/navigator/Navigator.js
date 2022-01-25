@@ -6,7 +6,7 @@ const Navigator = () => {
   return (
     <nav className="navigator">
       <div className="navigator__inner">
-        <h2 className="site-title">Movie Palooza</h2>
+        <a href="/" className="site-title">Movie Palooza</a>
       </div>
       <ul className="navigator__links">
         {navLinks.map((link, index) => {

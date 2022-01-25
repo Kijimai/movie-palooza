@@ -1,5 +1,5 @@
 .site-title {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: var(--font-site-title);
   background: linear-gradient(to top right, red, blue);
   background-clip: text;
@@ -7,13 +7,29 @@
 }
 
 .navigator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  &__links {
+    display: flex;
+    gap: 1rem;
+  }
+
   &__link {
     color: hsl(var(--color-white));
     text-decoration: none;
     font-size: 2rem;
     font-family: var(--font-sub);
     text-transform: capitalize;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 
     &:hover {
       color: yellow;

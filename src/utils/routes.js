@@ -1,7 +1,7 @@
 export const navLinks = [
   {
     name: "discover",
-    route: "movies/discover",
+    route: "discover",
   },
   {
     name: "about",

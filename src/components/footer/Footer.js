@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <div className="footer__attribution">
         <h3>API data provided kindly by: </h3>
-        <img className="footer__logo" src={tmdbLogo} alt="the movie database logo" />
+        <a target="_blank" rel="noopener noreferrer" href="https://www.themoviedb.org/?language=en-US"><img className="footer__logo" src={tmdbLogo} alt="the movie database logo" /></a>
         <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
       </div>
     </footer>

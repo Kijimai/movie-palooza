@@ -1,0 +1,25 @@
+.error {
+  position: relative;
+  min-height: 100vh;
+  background: no-repeat
+      linear-gradient(
+        to bottom,
+        hsla(var(--color-dark-blue) / 0.8) 5%,
+        hsla(var(--color-dark-purple) / 0.8) 15%,
+        hsla(var(--color-purple) / 0.8) 45%,
+        hsla(var(--color-pink) / 0.8)
+      ),
+    url("../images/film-reels-unsplash.jpg");
+  background-size: cover;
+
+  &__message-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}

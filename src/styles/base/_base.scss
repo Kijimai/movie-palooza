@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: var(--default-font-size);
 }
 
 *,
@@ -11,8 +12,8 @@ html {
 }
 
 body {
-  @include bodyGradient;
-  font-size: var(--default-font-size);
+  background-color: lightgrey;
+  position: relative;
   min-height: 100vh;
 }
 

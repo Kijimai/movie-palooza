@@ -13,6 +13,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: var(--default-font-size);
 }
 
 *,
@@ -24,8 +25,8 @@ html {
 }
 
 body {
-  background: linear-gradient(to bottom, hsl(var(--color-dark-blue)) 5%, hsl(var(--color-dark-purple)) 15%, hsl(var(--color-purple)) 45%, hsl(var(--color-pink)));
-  font-size: var(--default-font-size);
+  background-color: lightgrey;
+  position: relative;
   min-height: 100vh;
 }
 
@@ -44,23 +45,56 @@ li {
 }
 
 .site-title {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: var(--font-site-title);
   background: linear-gradient(to top right, red, blue);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.navigator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.navigator__links {
+  display: flex;
+  gap: 1rem;
+}
 .navigator__link {
   color: hsl(var(--color-white));
   text-decoration: none;
   font-size: 2rem;
   font-family: var(--font-sub);
   text-transform: capitalize;
-  transition: color 0.3s ease;
+  transition: color 0.5s ease;
 }
 .navigator__link:hover {
   color: yellow;
+}
+
+.error {
+  position: relative;
+  min-height: 100vh;
+  background: no-repeat linear-gradient(to bottom, hsla(var(--color-dark-blue)/0.8) 5%, hsla(var(--color-dark-purple)/0.8) 15%, hsla(var(--color-purple)/0.8) 45%, hsla(var(--color-pink)/0.8)), url("../images/film-reels-unsplash.jpg");
+  background-size: cover;
+}
+.error__message-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.error__message-container h1 {
+  font-size: 4rem;
 }
 
 .footer__logo {
