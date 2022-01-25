@@ -1,10 +1,13 @@
 import React from "react"
+import { useGlobalContext } from "../../context/context"
 import { FaSearch } from "react-icons/fa"
 
 const Searchbar = () => {
+  const { handleSubmit } = useGlobalContext()
+
   return (
     <section className="search">
-      <form className="search__form">
+      <form onSubmit={handleSubmit} className="search__form">
         <label htmlFor="search-movie">
           <FaSearch />
         </label>
@@ -14,6 +17,7 @@ const Searchbar = () => {
           type="text"
           placeholder="Search for a movie"
         />
+        <button>Search</button>
       </form>
     </section>
   )

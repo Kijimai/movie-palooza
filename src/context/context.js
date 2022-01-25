@@ -16,6 +16,9 @@ const AppProvider = ({ children }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    console.log(e)
+    console.log(e.target[0].value)
+    console.log("Pressed")
   }
 
   const handleChange = () => {}
