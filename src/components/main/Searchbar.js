@@ -7,7 +7,7 @@ const Searchbar = () => {
 
   return (
     <section className="search">
-      <form onSubmit={handleSubmit} className="search__form">
+      <form action="discover" onSubmit={handleSubmit} className="search__form">
         <label htmlFor="search-movie">
           <FaSearch />
         </label>

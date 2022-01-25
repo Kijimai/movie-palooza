@@ -12,12 +12,15 @@ const authAxios = axios.create({
 const AppContext = createContext()
 
 const AppProvider = ({ children }) => {
+  const [searchValue, setSearchValue] = useState("")
+
   const fetchData = () => {}
 
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(e)
     console.log(e.target[0].value)
+    setSearchValue(e.target[0].value)
     console.log("Pressed")
   }
 
@@ -30,7 +33,7 @@ const AppProvider = ({ children }) => {
   // })
 
   return (
-    <AppContext.Provider value={{ handleSubmit, handleChange }}>
+    <AppContext.Provider value={{ handleSubmit, handleChange, searchValue }}>
       {children}
     </AppContext.Provider>
   )
