@@ -1,9 +1,11 @@
 import React from "react"
-import Footer from "../footer/Footer"
+import Searchbar from "./Searchbar"
+
 const Main = () => {
   return (
-    <>
-    </>
+    <main>
+      <Searchbar />
+    </main>
   )
 }
 

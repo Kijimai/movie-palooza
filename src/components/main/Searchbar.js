@@ -1,12 +1,21 @@
 import React from "react"
+import { FaSearch } from "react-icons/fa"
 
 const Searchbar = () => {
   return (
-    <div>
-      <form className="search__">
-        <input type="text" placeholder="search for a movie" />
+    <section className="search">
+      <form className="search__form">
+        <label htmlFor="search-movie">
+          <FaSearch />
+        </label>
+        <input
+          className="search__searchbar"
+          id="search-movie"
+          type="text"
+          placeholder="Search for a movie"
+        />
       </form>
-    </div>
+    </section>
   )
 }
 
