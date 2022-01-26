@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import { useGlobalContext } from "../../context/context"
 import { FaSearch } from "react-icons/fa"
 

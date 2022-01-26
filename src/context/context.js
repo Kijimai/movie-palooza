@@ -18,6 +18,7 @@ const AppContext = createContext()
 const AppProvider = ({ children }) => {
   const [searchValue, setSearchValue] = useState("")
   const [discoveredMovies, setDiscoveredMovies] = useState([])
+  const [searchedMovie, setSearchedMovie] = useState("")
 
   const fetchDiscovered = async () => {
     const response = await authAxios
@@ -35,7 +36,7 @@ const AppProvider = ({ children }) => {
     e.preventDefault()
     console.log(e)
     console.log(e.target[0].value)
-    setSearchValue(e.target[0].value)
+    setSearchedMovie(e.target[0].value)
     console.log("Pressed")
   }
 
@@ -55,6 +56,7 @@ const AppProvider = ({ children }) => {
         searchValue,
         fetchDiscovered,
         discoveredMovies,
+        searchedMovie,
       }}
     >
       {children}

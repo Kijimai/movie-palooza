@@ -3,9 +3,9 @@ import { useGlobalContext } from "../../context/context"
 import Searchbar from "./Searchbar"
 
 const Main = () => {
-  const { searchValue } = useGlobalContext()
+  const { searchValue, searchedMovie } = useGlobalContext()
 
-  if (!searchValue) {
+  if (searchValue === "" && searchedMovie === "") {
     return (
       <main>
         <Searchbar />
@@ -13,7 +13,7 @@ const Main = () => {
     )
   }
 
-  return <main>{searchValue}</main>
+  return <main>{searchedMovie}</main>
 }
 
 export default Main
