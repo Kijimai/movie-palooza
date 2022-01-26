@@ -3,7 +3,7 @@ import "./styles/app.css"
 import Navigator from "./components/navigator/Navigator"
 import Main from "./components/main/Main"
 import Footer from "./components/footer/Footer"
-import Discover from "./components/pages/Discover"
+import Discover from "./components/pages/discover/Discover"
 import Error from "./components/pages/Error"
 import { AppProvider } from "./context/context"
 

@@ -1,7 +1,11 @@
 import React from 'react';
 
 const SideSearchbar = () => {
-  return <div></div>;
+  return <div>
+    <form>
+      
+    </form>
+  </div>;
 };
 
 export default SideSearchbar;
